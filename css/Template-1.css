@@ -78,10 +78,19 @@ html {
     font-size: 11px;
   }
 }
-.grid-250 {
+
+.grid-300 {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250PX, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   grid-gap: 20px;
+}
+
+@media (max-width: 300px) {
+  .grid-300 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+  }
 }
 /* end component  */
 /* start Header */
@@ -343,25 +352,25 @@ header .links ul li:not(:last-child) a {
 }
 
 .about .about-content .image::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: calc(100% + 80px);
-    background-color: var(--section-color);
-    top: -40px;
-    left: -20px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: calc(100% + 80px);
+  background-color: var(--section-color);
+  top: -40px;
+  left: -20px;
+  z-index: -1;
 }
 .about .about-content .image::after {
-    content: "";
-    position: absolute;
-    width: 120px;
-    height: 300px;
-    border-bottom: 80px solid var(--main-color);
-    border-left: 80px solid var(--main-color);
-    top: -40px;
-    right: -150px;
-    z-index: -1;
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 300px;
+  border-bottom: 80px solid var(--main-color);
+  border-left: 80px solid var(--main-color);
+  top: -40px;
+  right: -150px;
+  z-index: -1;
 }
 .about .about-content .image img {
   max-width: 100%;
@@ -379,7 +388,7 @@ header .links ul li:not(:last-child) a {
   border-color: var(--main-color);
   display: inline-block;
 }
-.about .about-content .text p:last-of-type{
+.about .about-content .text p:last-of-type {
   line-height: 2;
   color: var(--p-color);
 }
@@ -390,12 +399,12 @@ header .links ul li:not(:last-child) a {
     text-align: center;
   }
   .about .about-content .image {
-  margin: 0 auto 60px;
-}
-.about .about-content .image::before,
-.about .about-content .image::after {
-  display: none;
-}
+    margin: 0 auto 60px;
+  }
+  .about .about-content .image::before,
+  .about .about-content .image::after {
+    display: none;
+  }
 }
 /* end media quaires for about  */
 /* end about  */
@@ -437,13 +446,13 @@ header .links ul li:not(:last-child) a {
   color: var(--secondary-color);
 }
 @media (max-width: 767px) {
-.contact .info .link,
-.contact .info .label {
-  font-size: 25px;
-}
-.contact .info .social {
-  font-size: 15px;
-}
+  .contact .info .link,
+  .contact .info .label {
+    font-size: 25px;
+  }
+  .contact .info .social {
+    font-size: 15px;
+  }
 }
 /* end contact  */
 /* start footer */
